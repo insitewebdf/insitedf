@@ -600,21 +600,22 @@
 
                 <h3 class="h6">Nos envie uma mensagem ou peça um orçamento</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" method="post" action="https://formspree.io/your@email.com"
+      method="POST" novalidate="novalidate">
                     <fieldset>
     
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Seu nome" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="contactName" type="text" name="name" id="contactName" placeholder="Seu nome" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Seu e-mail" value="" required="" aria-required="true" class="full-width">
+                        <input type="email" name="email"  id="contactEmail" placeholder="Seu e-mail" value="" required="" aria-required="true" class="full-width">
                     </div>
                 
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Sua mensagem" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <textarea name="message" id="contactMessage" placeholder="Sua mensagem" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Enviar</button>
+                        <button type="submit" class="full-width btn--primary">Enviar</button>
                         <div class="submit-loader">
                             <div class="text-loader">Enviando..</div>
                             <div class="s-loader">
