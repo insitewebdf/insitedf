@@ -472,7 +472,7 @@ to{opacity:0;-webkit-transform:translate3d(0, -150%, 0);-ms-transform:translate3
 @media only screen and (max-width:400px){.services-list .service-item:nth-child(n){padding-right:0;padding-left:0;}
 .services-list h3{font-size:2.5rem;}
 }
-.s-works{background:#FFFFFF;padding:0 0 15rem 0;min-height:800px;position:relative;}
+.s-works{background-color:black;padding:0 0 15rem 0;min-height:800px;position:relative;}
 .s-works .intro-wrap{padding:15rem 0 25.2rem;background:#111111;}
 .works-content{max-width:1160px;margin-top:-23.4rem;}
 .masonry:after{content:"";display:table;clear:both;}
@@ -544,7 +544,12 @@ to{opacity:0;-webkit-transform:translate3d(0, -150%, 0);-ms-transform:translate3
 }
 @media only screen and (max-width:400px){.clients-testimonials .testimonials p{font-size:1.9rem;}
 }
-.s-contact{background-color:#151515;background-image:url("../images/hero-bg.jpg");background-repeat:no-repeat;background-position:center, center;padding-top:15rem;padding-bottom:12rem;color:rgba(255, 255, 255, 0.5);position:relative;}
+.s-contact{background-color:#151515;background-image:url("../images/hero-bg.jpg");background-repeat:no-repeat;background-position:center, center;padding-top:15rem;padding-bottom:12rem;color:rgba(255, 255, 255, 0.5);position:relative; height:auto !important;background-size:100% 100%; /* Imagem ocupando toda largura e altura da div */
+-webkit-background-size: 100%;
+-o-background-size: 100%;
+-khtml-background-size: 100%;
+-moz-background-size: 100% 100%;
+}}
 .s-contact .overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.2;background-color:#151515;}
 .s-contact .form-field{position:relative;}
 .s-contact .form-field:after{content:"";display:table;clear:both;}
